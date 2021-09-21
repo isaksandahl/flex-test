@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    
+    border: 1px solid black;
+}
+
+.wrapper > div {
+    border: 1px solid red;
+
+}
