@@ -1,10 +1,97 @@
-.wrapper {
-    display: flex;
-    
-    border: 1px solid black;
+* {
+    margin: 0;
 }
 
-.wrapper > div {
-    border: 1px solid red;
+/* Navigations Bar */
+
+nav {
+    background-color: #C8AD7E;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav a:hover{
+    background-color: #D1C0A8;
+}
+
+/* Div / Boxar */
+
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+[class ^="box"] {
+    height: 100vh;
+    flex: 1 0 100px;
+
+
+    
+    border-color: 2px solid red;
+}
+
+.box-1 {
+    background: purple;
+    border: 2px solid rgb(85, 0, 85);
+    padding: 10px;
+}
+
+.box-2 {
+    background: pink;
+    border: 2px solid rgb(218, 135, 149);
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.box-3 {
+    background: orange;
+    border: 2px solid rgb(211, 137, 0);
+    padding: 10px;
+
+}
+
+/* Box innehåll */
+
+.box-1 h2, p{
+    text-align: center;
+}
+
+.box-2 h2, p{
+    text-align: center;
+}
+
+.box-3 h2, p{
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px){
+
+    nav ul {
+        display: flex;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: nowrap row;
+    }
+
 
 }
