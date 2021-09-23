@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
 }
@@ -31,13 +33,18 @@ nav a:hover{
 /* Div / Boxar */
 
 .flex-container {
+    height: 100%;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around; /* Ingeting händer? */
+    flex-flow: column nowrap;
+    justify-content: space-around; 
+    gap: 10px;
+    
 }
 
 [class ^="box"] {
     border-color: 2px solid red;
+    /* flex-basis: 27%; */
+    
 }
 
 .box-1 {
@@ -88,7 +95,7 @@ nav a:hover{
     }
 
     .box-2 {
-        flex-grow: 2; /* Funkar inte? */ 
+        flex-grow: 2; 
     }
 
 
