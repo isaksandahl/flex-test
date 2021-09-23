@@ -1,12 +1,15 @@
-
+html, body {
+    height: 100%;
+}
 
 * {
     margin: 0;
 }
 
-/* Navigations Bar */
+/* Navigation Bar */
 
 nav {
+    margin-bottom: 10px;
     background-color: #C8AD7E;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -32,8 +35,13 @@ nav a:hover{
 
 /* Div / Boxar */
 
+/* .wrapper {
+    display: flex;
+} */
+
 .flex-container {
     height: 100%;
+    margin: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around; 
@@ -43,8 +51,6 @@ nav a:hover{
 
 [class ^="box"] {
     border-color: 2px solid red;
-    /* flex-basis: 27%; */
-    
 }
 
 .box-1 {
@@ -94,9 +100,16 @@ nav a:hover{
         height: 80vh;
     }
 
-    .box-2 {
-        flex-grow: 2; 
+    .box-1 {
+        flex-grow: 1;
     }
 
+    .box-2 {
+        flex-grow: 2;  /* Inget händer? */
+    }
+
+    .box-3 {
+        flex-grow: 1;
+    }
 
 }
